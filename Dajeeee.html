@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_46b0e44de14ed1c83077665f5911eda5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_46b0e44de14ed1c83077665f5911eda5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_46b0e44de14ed1c83077665f5911eda5 = L.map(
+                "map_46b0e44de14ed1c83077665f5911eda5",
+                {
+                    center: [43.84, 7.85],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6ef3c5557bf9baa5fb2f21a954309da5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_46b0e44de14ed1c83077665f5911eda5);
+        
+    
+            var marker_cluster_12697a6ca371faa7c6087a70d9d7da7a = L.markerClusterGroup(
+                {}
+            );
+            map_46b0e44de14ed1c83077665f5911eda5.addLayer(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var marker_19ac19101494412895e58326172c5c66 = L.marker(
+                [43.84, 7.85],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_3dda6dab735f7edc7bc66fea107a1b97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_19ac19101494412895e58326172c5c66.setIcon(icon_3dda6dab735f7edc7bc66fea107a1b97);
+        
+    
+        var popup_d687a6ce4203ee0a50b2d84bda30c65a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3015391acb1a154f0b894450837a5be = $(`<div id="html_f3015391acb1a154f0b894450837a5be" style="width: 100.0%; height: 100.0%;"><b>Riva Ligure</b><br>📍 Punto di partenza</div>`)[0];
+            popup_d687a6ce4203ee0a50b2d84bda30c65a.setContent(html_f3015391acb1a154f0b894450837a5be);
+        
+
+        marker_19ac19101494412895e58326172c5c66.bindPopup(popup_d687a6ce4203ee0a50b2d84bda30c65a)
+        ;
+
+        
+    
+    
+            marker_19ac19101494412895e58326172c5c66.bindTooltip(
+                `<div>
+                     Riva Ligure
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c09a690ebaae209fe10d312a51b28244 = L.marker(
+                [43.8534, 7.6202],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_546502833c78130d89a09f3e46a654d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c09a690ebaae209fe10d312a51b28244.setIcon(icon_546502833c78130d89a09f3e46a654d6);
+        
+    
+        var popup_987debee3ccb8e4e6217639568501a87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0e06a4bd57cf9af6cbe955a3ec8c16c = $(`<div id="html_c0e06a4bd57cf9af6cbe955a3ec8c16c" style="width: 100.0%; height: 100.0%;"><b>Dolceacqua</b><br>🏞 Ponte + Castello Doria</div>`)[0];
+            popup_987debee3ccb8e4e6217639568501a87.setContent(html_c0e06a4bd57cf9af6cbe955a3ec8c16c);
+        
+
+        marker_c09a690ebaae209fe10d312a51b28244.bindPopup(popup_987debee3ccb8e4e6217639568501a87)
+        ;
+
+        
+    
+    
+            marker_c09a690ebaae209fe10d312a51b28244.bindTooltip(
+                `<div>
+                     Dolceacqua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5b5100f97462287ba01e0ea5cbb0e73 = L.marker(
+                [43.9222, 7.5944],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_74304ec7084e23d6287c1f982f792907 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f5b5100f97462287ba01e0ea5cbb0e73.setIcon(icon_74304ec7084e23d6287c1f982f792907);
+        
+    
+        var popup_d2e43f0c663add7efefe74122ea0db5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6b4fd74288365078f3cdaa5abc5a249 = $(`<div id="html_b6b4fd74288365078f3cdaa5abc5a249" style="width: 100.0%; height: 100.0%;"><b>Rocchetta Nervina</b><br>🌊 Cascate e pozze</div>`)[0];
+            popup_d2e43f0c663add7efefe74122ea0db5f.setContent(html_b6b4fd74288365078f3cdaa5abc5a249);
+        
+
+        marker_f5b5100f97462287ba01e0ea5cbb0e73.bindPopup(popup_d2e43f0c663add7efefe74122ea0db5f)
+        ;
+
+        
+    
+    
+            marker_f5b5100f97462287ba01e0ea5cbb0e73.bindTooltip(
+                `<div>
+                     Rocchetta Nervina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cb5b2eec91ca670a60e34b48cff76eb = L.marker(
+                [44.2021, 8.4191],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_82b3fcbba86963a6382c7965ff03644b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6cb5b2eec91ca670a60e34b48cff76eb.setIcon(icon_82b3fcbba86963a6382c7965ff03644b);
+        
+    
+        var popup_6322d6958403286c1b7df87f1141f71c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f447b66c8b79f0f2c29aadc7130c0fa = $(`<div id="html_0f447b66c8b79f0f2c29aadc7130c0fa" style="width: 100.0%; height: 100.0%;"><b>Baia dei Saraceni (Varigotti)</b><br>🏖 Mare turchese</div>`)[0];
+            popup_6322d6958403286c1b7df87f1141f71c.setContent(html_0f447b66c8b79f0f2c29aadc7130c0fa);
+        
+
+        marker_6cb5b2eec91ca670a60e34b48cff76eb.bindPopup(popup_6322d6958403286c1b7df87f1141f71c)
+        ;
+
+        
+    
+    
+            marker_6cb5b2eec91ca670a60e34b48cff76eb.bindTooltip(
+                `<div>
+                     Baia dei Saraceni (Varigotti)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd84287791786057727ee648cb264d51 = L.marker(
+                [43.8821, 7.6701],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_b2dff1bb029ae137f3b76537bdb8c177 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cd84287791786057727ee648cb264d51.setIcon(icon_b2dff1bb029ae137f3b76537bdb8c177);
+        
+    
+        var popup_cdb721a252aa618f94d6293c525fcf33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0117ba0aa641e74ffcf0c7091752331 = $(`<div id="html_e0117ba0aa641e74ffcf0c7091752331" style="width: 100.0%; height: 100.0%;"><b>Apricale</b><br>🏰 Borgo pittoresco</div>`)[0];
+            popup_cdb721a252aa618f94d6293c525fcf33.setContent(html_e0117ba0aa641e74ffcf0c7091752331);
+        
+
+        marker_cd84287791786057727ee648cb264d51.bindPopup(popup_cdb721a252aa618f94d6293c525fcf33)
+        ;
+
+        
+    
+    
+            marker_cd84287791786057727ee648cb264d51.bindTooltip(
+                `<div>
+                     Apricale
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b56f0b10873af55a9557ff56dd8837a4 = L.marker(
+                [44.0481, 7.7837],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_6fea898acf9cc28340b19a9a33ab2051 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b56f0b10873af55a9557ff56dd8837a4.setIcon(icon_6fea898acf9cc28340b19a9a33ab2051);
+        
+    
+        var popup_7e4813952d33edbab93a9d6533aa4d17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac57906001bf856ddef728883c9a5916 = $(`<div id="html_ac57906001bf856ddef728883c9a5916" style="width: 100.0%; height: 100.0%;"><b>Monte Saccarello</b><br>⛰ Paesaggi alpini</div>`)[0];
+            popup_7e4813952d33edbab93a9d6533aa4d17.setContent(html_ac57906001bf856ddef728883c9a5916);
+        
+
+        marker_b56f0b10873af55a9557ff56dd8837a4.bindPopup(popup_7e4813952d33edbab93a9d6533aa4d17)
+        ;
+
+        
+    
+    
+            marker_b56f0b10873af55a9557ff56dd8837a4.bindTooltip(
+                `<div>
+                     Monte Saccarello
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77debb2311e95a1b8b938668c39593d3 = L.marker(
+                [44.1747, 8.3458],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_5b04c9edfa8ec52b1ac2ebfc304f64b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_77debb2311e95a1b8b938668c39593d3.setIcon(icon_5b04c9edfa8ec52b1ac2ebfc304f64b2);
+        
+    
+        var popup_25c55f68168b10e3d11049f897a69037 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bf8142ace901c2fe4fa7b3463e58531 = $(`<div id="html_3bf8142ace901c2fe4fa7b3463e58531" style="width: 100.0%; height: 100.0%;"><b>Finalborgo</b><br>🌆 Architettura medievale</div>`)[0];
+            popup_25c55f68168b10e3d11049f897a69037.setContent(html_3bf8142ace901c2fe4fa7b3463e58531);
+        
+
+        marker_77debb2311e95a1b8b938668c39593d3.bindPopup(popup_25c55f68168b10e3d11049f897a69037)
+        ;
+
+        
+    
+    
+            marker_77debb2311e95a1b8b938668c39593d3.bindTooltip(
+                `<div>
+                     Finalborgo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6db87864ff6fc1d76036cca51de5833e = L.marker(
+                [44.3798, 9.0382],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_2b7a09c6c4b9849e4d72ce2def9d5ded = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6db87864ff6fc1d76036cca51de5833e.setIcon(icon_2b7a09c6c4b9849e4d72ce2def9d5ded);
+        
+    
+        var popup_9fdc62a9139c39f4f7cb87af3bedf684 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca4313c1528850336c2cee7b8ec42123 = $(`<div id="html_ca4313c1528850336c2cee7b8ec42123" style="width: 100.0%; height: 100.0%;"><b>Passeggiata di Nervi (Genova)</b><br>🌁 Scogliera urbana</div>`)[0];
+            popup_9fdc62a9139c39f4f7cb87af3bedf684.setContent(html_ca4313c1528850336c2cee7b8ec42123);
+        
+
+        marker_6db87864ff6fc1d76036cca51de5833e.bindPopup(popup_9fdc62a9139c39f4f7cb87af3bedf684)
+        ;
+
+        
+    
+    
+            marker_6db87864ff6fc1d76036cca51de5833e.bindTooltip(
+                `<div>
+                     Passeggiata di Nervi (Genova)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ae6fafe41a6d6b877925fb4e448615f = L.marker(
+                [44.005, 8.0781],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_640276bab0db0b2b6005b4f70e5f4f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0ae6fafe41a6d6b877925fb4e448615f.setIcon(icon_640276bab0db0b2b6005b4f70e5f4f21);
+        
+    
+        var popup_fce3e70679cfd601c105d28c597a537c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fe759699f454c1d0152d105765af921 = $(`<div id="html_8fe759699f454c1d0152d105765af921" style="width: 100.0%; height: 100.0%;"><b>Laghetti di Lagorara</b><br>🏞️ Acque smeraldo</div>`)[0];
+            popup_fce3e70679cfd601c105d28c597a537c.setContent(html_8fe759699f454c1d0152d105765af921);
+        
+
+        marker_0ae6fafe41a6d6b877925fb4e448615f.bindPopup(popup_fce3e70679cfd601c105d28c597a537c)
+        ;
+
+        
+    
+    
+            marker_0ae6fafe41a6d6b877925fb4e448615f.bindTooltip(
+                `<div>
+                     Laghetti di Lagorara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56f164d0adb918651751afb45027cf87 = L.marker(
+                [43.8239, 7.8023],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_98ec1361c43efd36f41d443bdefb3642 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_56f164d0adb918651751afb45027cf87.setIcon(icon_98ec1361c43efd36f41d443bdefb3642);
+        
+    
+        var popup_ce8ae5a3c52fdb6d8e9ed2b860d3133e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_429b1015e9934f343e80809570a9782a = $(`<div id="html_429b1015e9934f343e80809570a9782a" style="width: 100.0%; height: 100.0%;"><b>Bussana Vecchia</b><br>🧱 Rovine artistiche</div>`)[0];
+            popup_ce8ae5a3c52fdb6d8e9ed2b860d3133e.setContent(html_429b1015e9934f343e80809570a9782a);
+        
+
+        marker_56f164d0adb918651751afb45027cf87.bindPopup(popup_ce8ae5a3c52fdb6d8e9ed2b860d3133e)
+        ;
+
+        
+    
+    
+            marker_56f164d0adb918651751afb45027cf87.bindTooltip(
+                `<div>
+                     Bussana Vecchia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1de666d9cbc6e380654735bf7e4d286 = L.marker(
+                [43.8027, 7.8512],
+                {}
+            ).addTo(marker_cluster_12697a6ca371faa7c6087a70d9d7da7a);
+        
+    
+            var icon_8c7dd328579a266859ab8cec483b17bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c1de666d9cbc6e380654735bf7e4d286.setIcon(icon_8c7dd328579a266859ab8cec483b17bb);
+        
+    
+        var popup_25dfae2249433e268083a5d35f131fc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb2c92f4cae1ff64f5ec67934ca14824 = $(`<div id="html_eb2c92f4cae1ff64f5ec67934ca14824" style="width: 100.0%; height: 100.0%;"><b>Pista ciclabile Ospedaletti - San Lorenzo</b><br>🚲 Scogliere e tunnel</div>`)[0];
+            popup_25dfae2249433e268083a5d35f131fc7.setContent(html_eb2c92f4cae1ff64f5ec67934ca14824);
+        
+
+        marker_c1de666d9cbc6e380654735bf7e4d286.bindPopup(popup_25dfae2249433e268083a5d35f131fc7)
+        ;
+
+        
+    
+    
+            marker_c1de666d9cbc6e380654735bf7e4d286.bindTooltip(
+                `<div>
+                     Pista ciclabile Ospedaletti - San Lorenzo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
